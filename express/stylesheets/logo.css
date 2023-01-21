@@ -1,0 +1,225 @@
+
+#font-italic-bold {
+  font-weight: bold;
+  font-style: italic;
+  color: #fff;
+}
+
+#first-p-font-italic {
+  font-size: 26px;
+  line-height: 38px;
+  font-style: italic;
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 30;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 30;
+  animation:fadeIn ease-in 30;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 30)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:30s;
+  -moz-animation-duration:30s;
+  animation-duration:30s;
+}
+
+.fade-in {
+-webkit-animation-delay: 35s;
+-moz-animation-delay: 35s;
+animation-delay: 35s;
+}
+
+
+
+#thumbs {
+  position:absolute;
+  margin:-50px;
+}
+
+
+#bcLogo {
+  margin: 175px 0;
+}
+
+#sizer {
+
+}
+/*@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}*/
+/*@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}*/
+
+
+svg:not (:root ) {
+    width:100%;
+    height: auto;
+}
+
+svg * {
+        fill: none;
+        stroke: currentColor;
+        max-width: 2942px;
+        max-width: 1441px;
+        margin:auto;
+}
+
+#demo {
+  max-width: 2942px;
+  max-height: 1441px;
+  margin:auto;
+}
+
+/*.content {
+  margin: auto;
+  max-width: 2942px;
+  max-height:1441px;
+  background-position: right 12px;
+  background-size: contain;
+  background-image:url('assets/l3-static.png');
+}*/
+
+
+.new-container {
+    position: relative;
+}
+#img2, .svgContainer {
+    position: absolute;
+
+}
+
+.img2 {
+    z-index: 0;
+    height:100%;
+    width:100%;
+}
+
+.svgContainer {
+    z-index: 1;
+}
+
+.obturateur {
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+#timing-example {
+       max-height: 1441px;
+       max-width:2942px;
+}
+
+#final {
+    position: absolute;
+    margin-top: -125px;
+    margin-left: -95px;
+
+}
+
+.true {
+  height:auto;
+  width:auto;
+
+z-index: 99;
+position:relative;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation: fadein 10s;
+   -moz-animation: fadein 10s;
+    -ms-animation: fadein 10s;
+     -o-animation: fadein 10s;
+        animation: fadein 10s;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+
+
+@keyframes fadeout {
+    from { opacity: 5; }
+    to   { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeout {
+    from { opacity: 5; }
+    to   { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+    from { opacity: 5; }
+    to   { opacity: 0; }
+}
+
+/* outternet Explorer */
+@-ms-keyframes fadeout {
+    from { opacity: 5; }
+    to   { opacity: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeout {
+    from { opacity: 5; }
+    to   { opacity: 0; }
+}
+
+#timing-example {
+    width: auto;
+    height: auto;
+    position: relative;
+    visibility:hidden;
+
+}
+
+#theMotionPathFirst {
+
+}
