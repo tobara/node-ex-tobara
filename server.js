@@ -10,6 +10,10 @@ app.use('/', function(req,res){
     //__dirname : It will resolve to your project folder.
   });
 const server = http.createServer(app);
-const port = 5000;
-server.listen(port);
-console.debug('Server listening on port ' + port);
+// const port = 5000;
+// server.listen(port);
+// console.debug('Server listening on port ' + port);
+
+server.listen(process.env.PORT || 3001, '0.0.0.0', () => {
+  console.log("Server is running.");
+});
